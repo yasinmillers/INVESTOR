@@ -38,7 +38,7 @@ router.post('/login', async(req, res) => {
             email: user.email,
         }, process.env.TOKEN, { expiresIn: '1h' });
         const { password, ...others } = user._doc;
-        res.status(200).json(others)
+        res.status(200).json(others, token);
 
     } catch (err) {
         req.status(500).json(err)
