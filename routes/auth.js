@@ -34,11 +34,11 @@ router.post('/login', async(req, res) => {
             res.status(401).json('wrong credentials');
         const token = jwt.sign({
             _id: user._id,
-            username: user.username,
-            email: user.email,
-        }, process.env.TOKEN, { expiresIn: '1h' });
+            isAdmin: user.isAdmin,
+            // email: user.email,
+        }, process.env.TOKEN, { expiresIn: '3d' });
         const { password, ...others } = user._doc;
-        res.status(200).json(others, token);
+        res.status(200).json(...others, token);
 
     } catch (err) {
         req.status(500).json(err)
