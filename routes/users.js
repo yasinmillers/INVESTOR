@@ -45,7 +45,7 @@ router.get('find/:id', verifyTokenAndAdmn, async(req, res) => {
         }
     })
     //get all users
-router.get('/:id', verifyTokenAndAdmn, async(req, res) => {
+router.get('/', verifyTokenAndAdmn, async(req, res) => {
         const query = req.query.new
         try {
             const User = query ?
@@ -70,8 +70,17 @@ router.get('/stats', verifyTokenAndAdmn, async(req, res) => {
                 $project: {
                     month: { $month: '$createdAt' },
                 }
+            },
+
+            {
+                $group: {
+                    id: "$month",
+                    toatal: { $sum: 1 },
+                }
             }
-        ])
+        ]);
+        res.status(200).json(data);
+
     } catch (err) {
         res.status(500).json(err)
 
