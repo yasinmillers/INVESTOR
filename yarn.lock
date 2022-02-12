@@ -14,7 +14,7 @@
   dependencies:
     "defer-to-connect" "^1.0.1"
 
-"@types/node@*", "@types/node@>=8.1.0":
+"@types/node@*":
   "integrity" "sha512-w3mrvNXLeDYV1GKTZorGJQivK6XLCoGwpnyJFbJVK/aTBQUxOCaa/GlFAAN3OTDFcb7h5tiFG+YXCO2By+riZw=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-17.0.5.tgz"
   "version" "17.0.5"
@@ -1041,7 +1041,7 @@
   dependencies:
     "escape-goat" "^2.0.0"
 
-"qs@^6.6.0", "qs@6.9.6":
+"qs@6.9.6":
   "integrity" "sha512-TIRk4aqYLNoJUbd+g2lEdz5kLWIuTMRagAXxl78Q0RiVjAOugHmeKNGdd3cwo/ktpf9aL9epCfFqWDEKysUlLQ=="
   "resolved" "https://registry.npmjs.org/qs/-/qs-6.9.6.tgz"
   "version" "6.9.6"
@@ -1261,14 +1261,6 @@
   "integrity" "sha1-PFMZQukIwml8DsNEhYwobHygpgo="
   "resolved" "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz"
   "version" "2.0.1"
-
-"stripe@^8.202.0":
-  "integrity" "sha512-3YGHVnUatEn/At5+aRy+REdB2IyVa96/zls2xvQrKFTgaJzRu1MsJcK0GKg0p2B0y0VqlZo9gmdDEqphSHHvtA=="
-  "resolved" "https://registry.npmjs.org/stripe/-/stripe-8.202.0.tgz"
-  "version" "8.202.0"
-  dependencies:
-    "@types/node" ">=8.1.0"
-    "qs" "^6.6.0"
 
 "supports-color@^5.5.0":
   "integrity" "sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow=="

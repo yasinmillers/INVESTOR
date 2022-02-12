@@ -18,7 +18,7 @@ app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/cart", cartRoute);
 app.use("/api/order", orderRoute);
-app.use("/api/payment", stripeRoute)
+
 
 
 app.listen(process.env.PORT || 3000, () => {
