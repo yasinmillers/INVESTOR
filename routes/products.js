@@ -79,5 +79,7 @@ router.get('/', async(req, res) => {
     }
 })
 
+product.findByIdAndUpdate(req.params.id, { $set: req.body }, { new: true }) //update
+
 
 module.exports = router;
